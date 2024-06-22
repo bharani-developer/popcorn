@@ -33,41 +33,45 @@ Check out the live demo [here](https://bharani-developer.github.io/popcorn/).
 
 1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/bharani-developer/popcorn.git
-    cd popcorn
-    ```
+   ```bash
+   git clone https://github.com/bharani-developer/popcorn.git
+   cd popcorn
+   ```
 
 2. **Install dependencies:**
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 3. **Start the development server:**
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
-    The app will be available at `http://localhost:3000`.
+   The app will be available at `https://localhost:3000`.
 
 ## Usage
 
 1. **Search for a movie:**
-    - Use the search bar to find movies from the IMDb database.
+
+   - Use the search bar to find movies from the IMDb database.
 
 2. **Add a movie to the watchlist:**
-    - Click the "Add to Watchlist" button next to the movie you want to add.
+
+   - Click the "Add to Watchlist" button next to the movie you want to add.
 
 3. **Remove a movie from the watchlist:**
-    - Click the "Remove from Watchlist" button next to the movie you want to remove.
+
+   - Click the "Remove from Watchlist" button next to the movie you want to remove.
 
 4. **Rate a movie:**
-    - Select a star rating for the movie. The average rating will be updated accordingly.
+
+   - Select a star rating for the movie. The average rating will be updated accordingly.
 
 5. **View total watch time:**
-    - The total time required to watch all movies in the watchlist is displayed.
+   - The total time required to watch all movies in the watchlist is displayed.
 
 ## Code Structure
 
@@ -112,7 +116,7 @@ This component allows users to rate movies and displays the average rating for e
 ## Technologies Used
 
 - **Frontend**: React, React Router, CSS
-- **API**: IMDb API *(or another movie database API)*
+- **API**: IMDb API _(or another movie database API)_
 - **State Management**: React Context API or Redux
 
 ## Contributing

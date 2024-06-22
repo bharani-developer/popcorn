@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 const containerStyle = {
   display: "flex",
   alignItems: "center",
-  gap: "16px",
+  gap: "16px"
 };
 
 const starContainerStyle = {
-  display: "flex",
+  display: "flex"
 };
 
 StarRating.propTypes = {
@@ -18,7 +18,7 @@ StarRating.propTypes = {
   size: PropTypes.number,
   messages: PropTypes.array,
   className: PropTypes.string,
-  onSetRating: PropTypes.func,
+  onSetRating: PropTypes.func
 };
 
 export default function StarRating({
@@ -28,7 +28,7 @@ export default function StarRating({
   className = "",
   messages = [],
   defaultRating = 0,
-  onSetRating,
+  onSetRating
 }) {
   const [rating, setRating] = useState(defaultRating);
   const [tempRating, setTempRating] = useState(0);
@@ -42,7 +42,7 @@ export default function StarRating({
     lineHeight: "1",
     margin: "0",
     color,
-    fontSize: `${size / 1.5}px`,
+    fontSize: `${size / 1.5}px`
   };
 
   return (
@@ -74,7 +74,7 @@ function Star({ onRate, full, onHoverIn, onHoverOut, color, size }) {
     width: `${size}px`,
     height: `${size}px`,
     display: "block",
-    cursor: "pointer",
+    cursor: "pointer"
   };
 
   return (
@@ -87,7 +87,7 @@ function Star({ onRate, full, onHoverIn, onHoverOut, color, size }) {
     >
       {full ? (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill={color}
           stroke={color}
@@ -96,7 +96,7 @@ function Star({ onRate, full, onHoverIn, onHoverOut, color, size }) {
         </svg>
       ) : (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke={color}
@@ -117,7 +117,7 @@ function Star({ onRate, full, onHoverIn, onHoverOut, color, size }) {
 FULL STAR
 
 <svg
-  xmlns="http://www.w3.org/2000/svg"
+  xmlns="https://www.w3.org/2000/svg"
   viewBox="0 0 20 20"
   fill="#000"
   stroke="#000"
