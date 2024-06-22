@@ -131,6 +131,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [bharani.developer@gmail.com@example.com](mailto:bharani.developer@gmail.com@example.com)
+Your Name - [Bharani karthikeyan](mailto:bharani.developer@gmail.com@example.com)
 
 Project Link: [https://github.com/bharani-developer/popcorn](https://github.com/bharani-developer/popcorn)
