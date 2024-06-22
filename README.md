@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# 🍿 Popcorn - Movie Watchlist App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Popcorn](images/popcorn.png)
+![Popcorn](images/popcorn1.png)
 
-## Available Scripts
+Popcorn is a React application that allows users to search for movies from the IMDb database, add or remove movies from their watchlist, calculate the total time to watch the movies, and give ratings to the movies.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Code Structure](#code-structure)
+- [Components](#components)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Search movies from the IMDb database
+- Add or remove movies from a personal watchlist
+- Calculate the total time required to watch all movies in the watchlist
+- Rate movies and see average ratings
 
-### `npm test`
+## Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Check out the live demo [here](https://your-demo-link.com).
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    git clone https://github.com/bharani-developer/popcorn.git
+    cd popcorn
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
 
-### `npm run eject`
+    ```bash
+    npm install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the development server:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    The app will be available at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. **Search for a movie:**
+    - Use the search bar to find movies from the IMDb database.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Add a movie to the watchlist:**
+    - Click the "Add to Watchlist" button next to the movie you want to add.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Remove a movie from the watchlist:**
+    - Click the "Remove from Watchlist" button next to the movie you want to remove.
 
-### Code Splitting
+4. **Rate a movie:**
+    - Select a star rating for the movie. The average rating will be updated accordingly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. **View total watch time:**
+    - The total time required to watch all movies in the watchlist is displayed.
 
-### Analyzing the Bundle Size
+## Code Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **`src/App.js`:** Main component that manages the state and renders the main layout.
+- **`src/components/Search.js`:** Component to search for movies.
+- **`src/components/MovieList.js`:** Component to display the list of movies.
+- **`src/components/Movie.js`:** Component to display a single movie.
+- **`src/components/Watchlist.js`:** Component to display the user's watchlist.
+- **`src/components/TotalTime.js`:** Component to display the total watch time.
+- **`src/components/Rating.js`:** Component to handle movie ratings.
 
-### Making a Progressive Web App
+## Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### `App.js`
 
-### Advanced Configuration
+This is the main component where the state is managed. It includes functions to add movies to the watchlist, remove them, and calculate the total watch time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### `Search.js`
 
-### Deployment
+This component includes a search bar and handles the search functionality.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `MovieList.js`
 
-### `npm run build` fails to minify
+This component takes a list of movies as a prop and renders them. It also handles sorting and filtering.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `Movie.js`
+
+This component represents a single movie in the list. It includes buttons to add or remove the movie from the watchlist and a rating feature.
+
+### `Watchlist.js`
+
+This component displays the user's watchlist, showing all movies that have been added.
+
+### `TotalTime.js`
+
+This component calculates and displays the total time required to watch all movies in the watchlist.
+
+### `Rating.js`
+
+This component allows users to rate movies and displays the average rating for each movie.
+
+## Technologies Used
+
+- **Frontend**: React, React Router, CSS
+- **API**: IMDb API *(or another movie database API)*
+- **State Management**: React Context API or Redux
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Your Name - [bharani.developer@gmail.com@example.com](mailto:bharani.developer@gmail.com@example.com)
+
+Project Link: [https://github.com/bharani-developer/popcorn](https://github.com/bharani-developer/popcorn)
