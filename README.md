@@ -1,7 +1,7 @@
 # 🍿 Popcorn - Movie Watchlist App
 
-![Popcorn](https://github.com/bharani-developer/popcorn/blob/main/public/popcorn.png)
-![Popcorn](https://github.com/bharani-developer/popcorn/blob/main/public/popcorn2.png)
+![Popcorn](https://github.com/bharani-developer/popcorn/blob/main/public/pocorn.png)
+![Popcorn](https://github.com/bharani-developer/popcorn/blob/main/public/popcorn1.png)
 
 Popcorn is a React application that allows users to search for movies from the IMDb database, add or remove movies from their watchlist, calculate the total time to watch the movies, and give ratings to the movies.
 
@@ -27,7 +27,7 @@ Popcorn is a React application that allows users to search for movies from the I
 
 ## Demo
 
-Check out the live demo [here](https://your-demo-link.com).
+Check out the live demo [here](https://bharani-developer.github.io/popcorn/).
 
 ## Installation
 
